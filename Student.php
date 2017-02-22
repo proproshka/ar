@@ -23,18 +23,3 @@ class Student extends ActiveRecord
         $this->type = 'student';
     }
 }
-
-$s = Student::get(2);
-
-$s->name = 'Dima';
-echo $s->name;
-
-$s->save();
-
-//var_dump($s);
-echo "\n";
-
-
-$studentsList = Student::find()
-                        ->where(['id' => 2, 'age' => 10])
-                        ->all();
