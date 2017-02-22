@@ -37,6 +37,11 @@ class ActiveRecord
         $this->props[$property] = $value;
     }
 
+    public function setData($data){
+        foreach ($data as $prop => $value) {
+            $this->$prop = $value;
+        }
+    }
 
 
 }

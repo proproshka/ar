@@ -23,7 +23,7 @@ abstract class Publication extends ActiveRecord
         ]
     ];
 
-    function __construct($title, $author)
+    function __construct()
     {
         $this->type = 'publication';
     }
